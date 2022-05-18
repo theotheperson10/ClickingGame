@@ -52,10 +52,6 @@ clock++}
 }
 
 function mousePressed(){
-storeItem("clicks",str(clicks))
-storeItem("multi",str(multi))
-storeItem("auto",str(auto))
-storeItem("value",str(value))
 if(screen!=="titlescreen"){
 locationA=findBox(sprites,"ClickingBox");
 if(mouseX>sprites[locationA][0]-sprites[locationA][2]/2&&mouseX<sprites[locationA][0]+sprites[locationA][2]/2&&mouseY>sprites[locationA][1]-sprites[locationA][3]/2&&mouseY<sprites[locationA][1]+sprites[locationA][3]/2){
@@ -111,6 +107,10 @@ sprites=[
 
 }
 }
+storeItem("clicks",str(clicks))
+storeItem("multi",str(multi))
+storeItem("auto",str(auto))
+storeItem("value",str(value))
 }
 
 function cap(cappednumber, cap){
