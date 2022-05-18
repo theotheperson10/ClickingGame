@@ -131,7 +131,7 @@ fill(table[g][5][0],table[g][5][1],table[g][5][2])
 strokeWeight(5)
 stroke(0,0,0)
 if(table[g][4]!=="text"){
-if(table[g][4]=="ClickingBox"){
+if(table[g][4]=="ClickingBox"&&screen!=="titlescreen"){
 rect(table[g][0],table[g][1]-screenShake,table[g][2],table[g][3]);}else{
 rect(table[g][0],table[g][1],table[g][2],table[g][3]);
 }}else{
