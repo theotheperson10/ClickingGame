@@ -32,7 +32,11 @@ function draw() {
   fill(0,0,0);
   rectMode(CENTER)
   noStroke();
-if(screen!=="titlescreen"){sprites=changeText(sprites,10,20,20,"Clicks: "+clicks)}
+if(screen!=="titlescreen"){sprites=changeText(sprites,10,20,20,"Clicks: "+clicks);
+storeItem("clicks",str(clicks))
+storeItem("multi",str(multi))
+storeItem("auto",str(auto))
+storeItem("value",str(value))}
   if(screen=="shop"){
 sprites=changeText(sprites,35,100,8,"Cost: "+multi*multi*25)
     sprites=changeText(sprites,35,200,8,"Cost: "+auto*auto*50)
@@ -49,10 +53,6 @@ screenShake=cap(screenShake+=5,10)
 clock=0;
 }
 clock++}
-storeItem("clicks",str(clicks))
-storeItem("multi",str(multi))
-storeItem("auto",str(auto))
-storeItem("value",str(value))
 }
 
 function mousePressed(){
