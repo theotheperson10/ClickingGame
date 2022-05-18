@@ -164,4 +164,9 @@ return g;
 function keyPressed(){
 if(screen!=="shop"){
 clicks+=value*multi
-screenShake=cap(screenShake+=5,10)}}
+screenShake=cap(screenShake+=5,10)}
+storeItem("clicks",str(clicks))
+storeItem("multi",str(multi))
+storeItem("auto",str(auto))
+storeItem("value",str(value))
+}
