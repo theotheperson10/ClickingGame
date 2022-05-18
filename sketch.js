@@ -166,7 +166,7 @@ return g;
 }
 
 function keyPressed(){
-if(screen!=="shop"){
+if(screen=="home"){
 clicks+=value*multi
 screenShake=cap(screenShake+=5,10)}
 storeItem("clicks",str(clicks))
