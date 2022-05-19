@@ -38,9 +38,9 @@ storeItem("multi",str(multi))
 storeItem("auto",str(auto))
 storeItem("value",str(value))}
   if(screen=="shop"){
-sprites=changeText(sprites,35,100,7,"Cost: "+multi*multi*25)
-    sprites=changeText(sprites,35,200,7,"Cost: "+auto*auto*50)
-    sprites=changeText(sprites,35,300,7,"Cost: "+value*value*25)
+sprites=changeText(sprites,35,100,6,"Cost: "+multi*multi*25)
+    sprites=changeText(sprites,35,200,6,"Cost: "+auto*auto*50)
+    sprites=changeText(sprites,35,300,6,"Cost: "+value*value*25)
   }
   renderSprites(sprites)
 if(screenShake>0){
@@ -68,7 +68,7 @@ if(screen!=="shop"){
 screen="shop"
 sprites=[[0,0,0,0,0,[0,0,0]],[75,300,0,0,"ClickingBox",[0,255,0]],[350,50,50,50,"shopButton",[255,125,50]],[10,20,20,"3DS","text",[0,0,0]],[327,50,15,"Return","text",[0,0,0]],[50,100,50,50,"Upgrade1",[255,100,255]],[50,200,50,50,"Upgrade2",[255,100,255]],[50,300,50,50,"Upgrade3",[255,100,255]],
 [100,100,10,"(Upgrade 1) Multiplies your click value","text",[0,0,255]],[100,200,10,"(Upgrade 2) Buys and Upgrades the auto-clicker","text",[0,0,255]],[100,300,10,"(Upgrade 3) Upgrades click value","text",[0,0,255]],
-[35,100,7,"Cost: 1","text",[0,0,0]],[35,200,7,"Cost: 1","text",[0,0,0]],[35,300,7,"Cost: 1","text",[0,0,0]]]
+[35,100,6,"Cost: 1","text",[0,0,0]],[35,200,6,"Cost: 1","text",[0,0,0]],[35,300,6,"Cost: 1","text",[0,0,0]]]
 }else{
 screen="home";
 sprites=[
